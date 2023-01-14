@@ -1,0 +1,12 @@
+{% extends 'menuapp/base.html' %}
+
+{% block title %} Menu Page {% endblock %}
+
+{% load draw_menu %}
+{% block content %}
+
+<!--Здесь рендерится меню. Вместо 'Menu1' и 'Menu2' укажите нужные имена-->
+{% draw_menu 'Menu1' %}
+{% draw_menu 'Menu2' %}
+
+{% endblock %}

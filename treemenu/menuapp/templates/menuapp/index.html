@@ -1,0 +1,16 @@
+{% extends 'menuapp/base.html' %}
+
+{% block title %} Index Page {% endblock %}
+
+{% block content %}
+<h1>Список созданных меню:</h1>
+{% for menu in menu_list %}
+<li>{{ menu }}</li>
+{% endfor %}
+<h2>Создать меню и вложенные меню можно в <a href="http://127.0.0.1:8000/admin/">админке</a></h2>
+
+<h3>Для рендера дерева укажите название меню в menu.html (draw_menu 'Название меню').
+    <br>После чего откройте <a href="{% url 'menuapp:menu' %}">страницу меню</a></h3>
+
+
+{% endblock %}
