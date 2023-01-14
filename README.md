@@ -23,12 +23,7 @@ source /opt/venv/treemenu_env/bin/activate
 ```
 pip3 install Django==4.1.2
 ```
-Клонируем репозиторий:
-```
-git clone https://github.com/Onlyjoysprod/TreeMenu.git /opt/venv/treemenu_env/src
-cd treemenu_env/
-```
-#### Создаем суперпользователя для доступа к панели администратора
+#### Переходим в папку с проектом и создаем суперпользователя для доступа к панели администратора
 ```
 python3 manage.py createsuperuser
 ```
